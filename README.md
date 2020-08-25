@@ -1,7 +1,7 @@
 # deep learning object detection
 A paper list of object detection using deep learning. I wrote this page with reference to [this survey paper](https://arxiv.org/pdf/1809.02165v1.pdf) and searching and searching.. 
 
-*Last updated: 2020/01/13*
+*Last updated: 2020/07/17*
 
 #### Update log
 *2018/9/18* - update all of recent papers and make some diagram about history of object detection using deep learning. 
@@ -19,7 +19,8 @@ A paper list of object detection using deep learning. I wrote this page with ref
 *2019/september* - update NeurIPS 2019 papers and ICCV 2019 papers.  
 *2019/november* - update some of AAAI 2020 papers and other papers.  
 *2020/january* - update ICLR 2020 papers and other papers.  
-
+*2020/may* - update CVPR 2020 papers and other papers.  
+*2020/june* - update arxiv papers.  
 
 
 ##
@@ -34,6 +35,7 @@ A paper list of object detection using deep learning. I wrote this page with ref
   - [2017](https://github.com/hoya012/deep_learning_object_detection/blob/master/README.md#2017)
   - [2018](https://github.com/hoya012/deep_learning_object_detection/blob/master/README.md#2018)
   - [2019](https://github.com/hoya012/deep_learning_object_detection/blob/master/README.md#2019)
+  - [2020](https://github.com/hoya012/deep_learning_object_detection/blob/master/README.md#2020)
 - [Dataset Papers](https://github.com/hoya012/deep_learning_object_detection/blob/master/README.md#dataset-papers)
 
 ##
@@ -105,6 +107,7 @@ FPS(Speed) index is related to the hardware spec(e.g. CPU, GPU, RAM, etc), so it
 |      FSAF    |          -          |          -          |     44.6   |    CVPR'19   |
 | AmoebaNet + NAS-FPN |     -        |          -          |     47.0   |    CVPR'19   |
 | Cascade-RetinaNet |       -        |           -         |     41.1   |    CVPR'19   |
+|      HTC     |          -          |          -          |     47.2   |    CVPR'19   |
 |   TridentNet |          -          |          -          |     48.4   |    ICCV'19   |
 |      DAFS    |   **85.3 (07+12)**  |    83.1 (07++12)    |     40.5   |    ICCV'19   |
 |   Auto-FPN   |     81.8 (07++12)   |          -          |     40.5   |    ICCV'19   |
@@ -113,7 +116,10 @@ FPS(Speed) index is related to the hardware spec(e.g. CPU, GPU, RAM, etc), so it
 |    DetNAS    |     81.5 (07++12)   |          -          |     42.0   |  NeurIPS'19  |
 |     NATS     |          -          |          -          |     42.0   |  NeurIPS'19  |
 | AmoebaNet + NAS-FPN + AA |   -     |          -          |     50.7   |    arXiv'19  |
-| EfficientDet |          -          |          -          |   **51.0** |    arXiv'19  |
+|   SpineNet   |          -          |          -          |     52.1   |    arXiv'19  |
+|     CBNet    |          -          |          -          |     53.3   |    AAAI'20   |
+| EfficientDet |          -          |          -          |     52.6   |    CVPR'20   |
+|  DetectoRS   |          -          |          -          |     **54.7**   |    arXiv'20   |
 
 ##
 
@@ -334,6 +340,8 @@ FPS(Speed) index is related to the hardware spec(e.g. CPU, GPU, RAM, etc), so it
 
 - Diversify and Match: A Domain Adaptive Representation Learning Paradigm for Object Detection | **[CVPR' 19]** |[`[pdf]`](https://arxiv.org/pdf/1905.05396.pdf)
 
+- Hybrid Task Cascade for Instance Segmentation | **[CVPR' 19]** |[`[pdf]`](https://arxiv.org/pdf/1901.07518.pdf)
+
 - **[GFR]** Improving Object Detection from Scratch via Gated Feature Reuse | **[BMVC' 19]** |[`[pdf]`](https://arxiv.org/pdf/1712.00886v2.pdf) | [`[official code - pytorch]`](https://github.com/szq0214/GFR-DSOD)
 
 - **[Cascade RetinaNet]** Cascade RetinaNet: Maintaining Consistency for Single-Stage Object Detection | **[BMVC' 19]** |[`[pdf]`](https://arxiv.org/pdf/1907.06881v1.pdf)
@@ -456,18 +464,147 @@ FPS(Speed) index is related to the hardware spec(e.g. CPU, GPU, RAM, etc), so it
 
 - **[AA]** Learning Data Augmentation Strategies for Object Detection | **[arXiv' 19]** |[`[pdf]`](https://arxiv.org/pdf/1906.11172.pdf)
 
-- **[EfficientDet]** EfficientDet: Scalable and Efficient Object Detection | **[arXiv' 19]** |[`[pdf]`](https://arxiv.org/pdf/1911.09070v1.pdf)
+- **[Spinenet]** Spinenet: Learning scale-permuted backbone for recognition and localization | **[arXiv' 19]** |[`[pdf]`](https://arxiv.org/pdf/1912.05027.pdf)
+
+- Object Detection in 20 Years: A Survey | **[arXiv' 19]** |[`[pdf]`](https://arxiv.org/pdf/1905.05055.pdf)
 
 ## 2020
 - **[Spiking-YOLO]** Spiking-YOLO: Spiking Neural Network for Real-time Object Detection | **[AAAI' 20]** |[`[pdf]`](https://arxiv.org/pdf/1903.06530.pdf)
 
 - Tell Me What They're Holding: Weakly-supervised Object Detection with Transferable Knowledge from Human-object Interaction | **[AAAI' 20]** |[`[pdf]`](https://arxiv.org/pdf/1911.08141v1.pdf)
 
-- Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression | **[AAAI' 20]** |[`[pdf]`](https://arxiv.org/pdf/1911.08287v1.pdf)
+- **[CBnet]** Cbnet: A novel composite backbone network architecture for object detection | **[AAAI' 20]** |[`[pdf]`](https://arxiv.org/pdf/1909.03625.pdf)
+
+- **[Distance-IoU Loss]** Distance-IoU Loss: Faster and Better Learning for Bounding Box Regression | **[AAAI' 20]** |[`[pdf]`](https://arxiv.org/pdf/1911.08287v1.pdf)
 
 - Computation Reallocation for Object Detection | **[ICLR' 20]** |[`[pdf]`](https://openreview.net/pdf?id=SkxLFaNKwB)
 
+- **[YOLOv4]** YOLOv4: Optimal Speed and Accuracy of Object Detection | **[arXiv' 20]** |[`[pdf]`](https://arxiv.org/pdf/2004.10934.pdf)
 
+- Few-Shot Object Detection With Attention-RPN and Multi-Relation Detector | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1908.01998.pdf)
+
+- Large-Scale Object Detection in the Wild From Imbalanced Multi-Labels | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2005.08455.pdf)
+
+- Bridging the Gap Between Anchor-Based and Anchor-Free Detection via Adaptive Training Sample Selection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.02424.pdf)
+
+- Rethinking Classification and Localization for Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1904.06493.pdf)
+
+- Multiple Anchor Learning for Visual Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.02252.pdf)
+
+- **[CentripetalNet]** CentripetalNet: Pursuing High-Quality Keypoint Pairs for Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.09119.pdf)
+
+- Learning From Noisy Anchors for One-Stage Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.05086.pdf)
+
+- **[EfficientDet]** EfficientDet: Scalable and Efficient Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1911.09070.pdf)
+
+- Overcoming Classifier Imbalance for Long-Tail Object Detection With Balanced Group Softmax | **[CVPR' 20]** 
+
+- Dynamic Refinement Network for Oriented and Densely Packed Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2005.09973.pdf)
+
+- Noise-Aware Fully Webly Supervised Object Detection	 | **[CVPR' 20]** 
+
+- **[Hit-Detector]** Hit-Detector: Hierarchical Trinity Architecture Search for Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.11818.pdf)
+
+- **[D2Det]** D2Det: Towards High Quality Object Detection and Instance Segmentation | **[CVPR' 20]** 
+
+- Prime Sample Attention in Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1904.04821.pdf)
+
+- Don’t Even Look Once: Synthesizing Features for Zero-Shot Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1911.07933.pdf)
+
+- Exploring Categorical Regularization for Domain Adaptive Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.09152.pdf)
+
+- **[SP-NAS]** SP-NAS: Serial-to-Parallel Backbone Search for Object Detection	 | **[CVPR' 20]** 
+
+- **[NAS-FCOS]** NAS-FCOS: Fast Neural Architecture Search for Object Detection | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1906.04423.pdf)
+
+- **[DR Loss]** DR Loss: Improving Object Detection by Distributional Ranking	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1907.10156.pdf)
+
+- Detection in Crowded Scenes: One Proposal, Multiple Predictions	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.09163.pdf)
+
+- **[AugFPN]** AugFPN: Improving Multi-Scale Feature Learning for Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.05384.pdf)
+
+- Robust Object Detection Under Occlusion With Context-Aware CompositionalNets	 | **[CVPR' 20]** 
+
+- Cross-Domain Document Object Detection: Benchmark Suite and Method | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.13197.pdf)
+
+- Exploring Bottom-Up and Top-Down Cues With Attentive Learning for Webly Supervised Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.09790.pdf)
+
+- **[SLV]** SLV: Spatial Likelihood Voting for Weakly Supervised Object Detection	 | **[CVPR' 20]** 
+
+- **[HAMBox]** HAMBox: Delving Into Mining High-Quality Anchors on Face Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.09231.pdf)
+
+- **[Context R-CNN]** Context R-CNN: Long Term Temporal Context for Per-Camera Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.03538.pdf)
+
+- Mixture Dense Regression for Object Detection and Human Pose Estimation	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.00821.pdf)
+
+- Offset Bin Classification Network for Accurate Object Detection	 | **[CVPR' 20]** 
+
+- **[NETNet]** NETNet: Neighbor Erasing and Transferring Network for Better Single Shot Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2001.06690.pdf)
+
+- Scale-Equalizing Pyramid Convolution for Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2005.03101.pdf)
+
+- Temporal-Context Enhanced Detection of Heavily Occluded Pedestrians	 | **[CVPR' 20]** |[`[pdf]`](https://cse.buffalo.edu/~jsyuan/papers/2020/TFAN.pdf)
+
+- **[MnasFPN]** MnasFPN: Learning Latency-Aware Pyramid Architecture for Object Detection on Mobile Devices	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.01106.pdf)
+
+- Physically Realizable Adversarial Examples for LiDAR Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2004.00543.pdf)
+
+- Cross-domain Object Detection through Coarse-to-Fine Feature Adaptation	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.10275.pdf)
+
+- Incremental Few-Shot Object Detection	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.04668.pdf)
+
+- Where, What, Whether: Multi-Modal Learning Meets Pedestrian Detection	 | **[CVPR' 20]** 
+
+- Cylindrical Convolutional Networks for Joint Object Detection and Viewpoint Estimation	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/2003.11303.pdf)
+
+- Learning a Unified Sample Weighting Network for Object Detection	 | **[CVPR' 20]** 
+
+- Seeing without Looking: Contextual Rescoring of Object Detections for AP Maximization	 | **[CVPR' 20]** |[`[pdf]`](https://arxiv.org/pdf/1912.12290.pdf)
+
+- DetectoRS: Detecting Objects with Recursive Feature Pyramid and Switchable Atrous Convolution	 | **[arXiv' 20]** |[`[pdf]`](https://arxiv.org/pdf/2006.02334v1.pdf)
+
+- **[DETR]** End-to-End Object Detection with Transformers	| **[ECCV' 20]** |[`[pdf]`](https://arxiv.org/pdf/2005.12872.pdf)
+
+- Suppress and Balance: A Simple Gated Network for Salient Object Detection	| **[ECCV' 20]** |[`[code]`](https://github.com/Xiaoqi-Zhao-DLUT/GateNet-RGB-Saliency)
+
+- **[BorderDet]** BorderDet: Border Feature for Dense Object Detection | **[ECCV' 20]** 
+- Corner Proposal Network for Anchor-free, Two-stage Object Detection	| **[ECCV' 20]** 
+- A General Toolbox for Understanding Errors in Object Detection	| **[ECCV' 20]** 
+- **[Chained-Tracker]** Chained-Tracker: Chaining Paired Attentive Regression Results for End-to-End Joint Multiple-Object Detection and Tracking		| **[ECCV' 20]** 
+- Side-Aware Boundary Localization for More Precise Object Detection	| **[ECCV' 20]** 
+- **[PIoU]** PIoU Loss: Towards Accurate Oriented Object Detection in Complex Environments	| **[ECCV' 20]** 
+- **[AABO]** AABO: Adaptive Anchor Box Optimization for Object Detection via Bayesian Sub-sampling	| **[ECCV' 20]** 
+- Highly Efficient Salient Object Detection with 100K Parameters		| **[ECCV' 20]** 
+- **[GeoGraph]** GeoGraph: Learning graph-based multi-view object detection with geometric cues end-to-end		| **[ECCV' 20]** 
+- Many-shot from Low-shot: Learning to Annotate using Mixed Supervision for Object Detection		| **[ECCV' 20]** 
+- Cheaper Pre-training Lunch: An Efficient Paradigm for Object Detection	| **[ECCV' 20]** 
+- Arbitrary-Oriented Object Detection with Circular Smooth Label	| **[ECCV' 20]** 
+- Soft Anchor-Point Object Detection		| **[ECCV' 20]** 
+- Object Detection with a Unified Label Space from Multiple Datasets	| **[ECCV' 20]** 
+- **[MimicDet]** MimicDet: Bridging the Gap Between One-Stage and Two-Stage Object Detection		| **[ECCV' 20]** 
+- Prior-based Domain Adaptive Object Detection for Hazy and Rainy Conditions		| **[ECCV' 20]** 
+- **[Dynamic R-CNN]** Dynamic R-CNN: Towards High Quality Object Detection via Dynamic Training		| **[ECCV' 20]** 
+- **[OS2D]** OS2D: One-Stage One-Shot Object Detection by Matching Anchor Features		| **[ECCV' 20]** 
+- Multi-Scale Positive Sample Refinement for Few-Shot Object Detection		| **[ECCV' 20]** 
+- Few-Shot Object Detection and Viewpoint Estimation for Objects in the Wild		| **[ECCV' 20]** 
+- Collaborative Training between Region Proposal Localization and Classification for Domain Adaptive Object Detection		| **[ECCV' 20]** 
+- Two-Stream Active Query Suggestion for Large-Scale Object Detection in Connectomics		| **[ECCV' 20]** 
+- **[FDTS]** FDTS: Fast Diverse-Transformation Search for Object Detection and Beyond		| **[ECCV' 20]** 
+- Dual refinement underwater object detection network		| **[ECCV' 20]** 
+- **[APRICOT]** APRICOT: A Dataset of Physical Adversarial Attacks on Object Detection		| **[ECCV' 20]** 
+- Large Batch Optimization for Object Detection: Training COCO in 12 Minutes		| **[ECCV' 20]** 
+- Hierarchical Context Embedding for Region-based Object Detection		| **[ECCV' 20]** 
+- Pillar-based Object Detection for Autonomous Driving		| **[ECCV' 20]** 
+- Dive Deeper Into Box for Object Detection		| **[ECCV' 20]** 
+- Domain Adaptive Object Detection via Asymmetric Tri-way Faster-RCNN		| **[ECCV' 20]** 
+- Probabilistic Anchor Assignment with IoU Prediction for Object Detection		| **[ECCV' 20]** 
+- **[HoughNet]** HoughNet: Integrating near and long-range evidence for bottom-up object detection		| **[ECCV' 20]** 
+- **[LabelEnc]** LabelEnc: A New Intermediate Supervision Method for Object Detection		| **[ECCV' 20]** 
+- Boosting Weakly Supervised Object Detection with Progressive Knowledge Transfer		| **[ECCV' 20]** 
+- On the Importance of Data Augmentation for Object Detection		| **[ECCV' 20]** 
+- Adaptive Object Detection with Dual Multi-Label Prediction		| **[ECCV' 20]** 
+- Quantum-soft QUBO Suppression for Accurate Object Detection		| **[ECCV' 20]** 
+- Improving Object Detection with Selective Self-supervised Self-training		| **[ECCV' 20]** 
 
 
 ##
